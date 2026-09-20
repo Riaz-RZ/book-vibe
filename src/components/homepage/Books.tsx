@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { IBook } from "@/types/book.type";
 import BookCard from "../shared/BookCard";
 
 const getBooks = async () => {
@@ -23,7 +23,7 @@ const Books = async () => {
             </div>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {booksData.map((book, bookId) => {
+                {booksData.map((book:IBook, bookId:number) => {
                    return <BookCard key={bookId} book={book}/>
                 })}
             </div>

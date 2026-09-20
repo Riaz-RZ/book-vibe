@@ -1,7 +1,11 @@
+import { IBook } from "@/types/book.type";
 import Image from "next/image";
 
+export interface IBooksCardProps{
+    book:IBook
+}
 
-const BookCard = ({book}) => {
+const BookCard = ({book}:IBooksCardProps) => {
     return (
         <div className="group overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
