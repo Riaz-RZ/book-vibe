@@ -8,6 +8,14 @@ const Navbar = () => {
         <>
             <li>
                 <Link
+                    href="/books"
+                    className="font-medium text-gray-700 hover:text-green-600 transition-colors"
+                >
+                    Books
+                </Link>
+            </li>
+            <li>
+                <Link
                     href="/listed-books"
                     className="font-medium text-gray-700 hover:text-green-600 transition-colors"
                 >
